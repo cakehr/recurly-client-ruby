@@ -1,6 +1,5 @@
 require 'cgi'
 require 'net/https'
-
 module Recurly
   class API
     module Net
