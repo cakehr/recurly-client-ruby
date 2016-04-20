@@ -3,8 +3,9 @@ module Recurly
     # @return [MeasuredUnit]
     has_one :measured_unit
 
+    # Singular because the endpoint is /usage not /usages
     # @return [Usage]
-    has_many :usages
+    has_many :usage
 
     define_attribute_methods %w(
       add_on_code

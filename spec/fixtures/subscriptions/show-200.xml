@@ -28,7 +28,7 @@ Content-Type: application/xml; charset=utf-8
     <subscription_add_on>
       <add_on_type>usage</add_on_type>
       <measured_unit href="https://api.recurly.com/v2/measured_units/388159600349677344"/>
-      <usages href="https://api.recurly.com/v2/abcdef1234567890/add_ons/marketing_email/usage"/>
+      <usage href="https://api.recurly.com/v2/subscriptions/abcdef1234567890/add_ons/marketing_email/usage"/>
       <add_on_code>marketing_email</add_on_code>
       <unit_amount_in_cents type="integer">5</unit_amount_in_cents>
       <quantity type="integer">1</quantity>
