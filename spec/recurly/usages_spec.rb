@@ -5,8 +5,8 @@ describe Usage do
     stub_api_request :get, 'subscriptions/abcdef1234567890', 'subscriptions/show-200'
     stub_api_request(
       :post,
-      'subscriptions/abcdef1234567890/add_ons/marketing_email/usages',
-      'subscriptions/add_ons/usages/create-201'
+      'subscriptions/abcdef1234567890/add_ons/marketing_email/usage',
+      'subscriptions/add_ons/usage/create-201'
     )
   end
 
