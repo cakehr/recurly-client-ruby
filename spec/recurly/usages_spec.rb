@@ -32,10 +32,11 @@ describe Usage do
     end
 
     it "must support querying" do
-      time = DateTime.now
+      time = "2016-04-20T16:33:56"
 
       query = "billing_status=all&datetime_type=usage&end_datetime=#{time}&start_datetime=#{time}"
 
+      puts query
       stub_api_request(
         :get,
         "subscriptions/abcdef1234567890/add_ons/marketing_email/usage?#{query}",
@@ -63,7 +64,7 @@ describe Usage do
 
   describe ".to_xml" do
     it "must serialize to correct xml" do
-      time = DateTime.now
+      time = DateTime.now.strftime
       usage.amount = 10
       usage.merchant_tag = "10 emails delivered for merchant"
       usage.recording_timestamp = time
