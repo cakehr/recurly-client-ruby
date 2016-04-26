@@ -61,6 +61,7 @@ module Recurly
       customer_notes
       vat_reverse_charge_notes
       address
+      timeframe
     )
     alias to_param uuid
 
