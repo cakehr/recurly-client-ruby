@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake', '~> 11.1'
   s.add_development_dependency 'minitest', '~> 5.8'
-  s.add_development_dependency 'webmock',  '~> 1.24'
+  s.add_development_dependency 'webmock',  '~> 3.11'
 end
